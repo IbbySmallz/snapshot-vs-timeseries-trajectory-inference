@@ -1,0 +1,14 @@
+# data — download via notebook 01
+KleinLabData/
+*.h5ad
+*.csv
+
+# generated figures (optional to track)
+*.png
+
+# python env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
