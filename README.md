@@ -10,7 +10,7 @@ across days 2, 4, and 6.
 | Method | Type | Description |
 |--------|------|-------------|
 | **Palantir** | Single-snapshot | Graph-based pseudotime on the day-2 snapshot alone. Computes diffusion maps and branch probabilities via a Markov chain. |
-| **MultistageOT** | Single-snapshot | Optimal transport across consecutive time points. Learns a transport plan matching the day-2 distribution to days 4/6. |
+| **MultistageOT** | Single-snapshot | Models cell differentiation in a single snapshot as a series of intermediate cell transitions. MultistageOT employs multiple transport stages to establish temporal progression within the snapshot. Uses global information across all cells and differentiation stages to infer coherent trajectories from initial to terminal states.
 | **PRESCIENT** | Multi-snapshot | Neural SDE trained on all time points. Simulates cell trajectories forward in time from the day-2 starting population. |
 
 Single-snapshot methods receive only the day-2 cells as input.
