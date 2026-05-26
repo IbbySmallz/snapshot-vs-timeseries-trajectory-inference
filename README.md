@@ -30,6 +30,7 @@ Pearson r and the Weinreb 2020 Neutrophil–Monocyte bias score.
 |----------|-------------|
 | `01_preprocessing_eda.ipynb` | Download LARRY data, preprocessing pipeline (log1p → HVG → scale → PCA → UMAP), clonal fate fraction computation |
 | `02_palantir.ipynb` | Palantir trajectory inference and evaluation |
+| `03_prescient.ipynb` | PRESCIENT multi-snapshot training, simulation, and evaluation |
 
 ## Getting Started
 
@@ -37,7 +38,7 @@ Pearson r and the Weinreb 2020 Neutrophil–Monocyte bias score.
 pip install -r requirements.txt
 ```
 
-Run notebooks in order: `01` → `02`. Notebook 01 downloads the raw data
+Run notebooks in order: `01` → `02` → `03`. Notebook 01 downloads the raw data
 (~2 GB) from the Klein Lab server and saves `larry_preprocessed.h5ad`,
 which is required by subsequent notebooks.
 
